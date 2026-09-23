@@ -1,0 +1,171 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Shudus Plumbing and Construction provides professional plumbing installation, repairs, maintenance and construction solutions.">
+    <meta name="keywords"
+          content="Shudus Plumbing, plumbing, construction, plumbing repairs, geyser installation, Gauteng">
+    <meta name="author" content="Khuthadzo Andrew Magada">
+
+    <title>Shudus Plumbing & Construction | Professional Plumbing Solutions</title>
+
+    <!-- External CSS stylesheet required for Part 2 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts: Poppins for headings/navigation and Open Sans for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="index.html" class="logo" aria-label="Shudus Plumbing and Construction home">
+                <img src="images/shudus10.png"
+                     alt="Shudus Plumbing and Construction logo">
+            </a>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="main-menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="main-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li>
+                    <a href="#quote" class="quote-btn">Request a Quote</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+   <!-- =========================
+             REQUEST A QUOTE
+        ========================== -->
+        <section class="section quote-section" id="quote">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">GET IN TOUCH</p>
+                    <h2>Request a Quote</h2>
+                    <p>
+                        Tell us about your plumbing or construction requirements
+                        and our team will assist you.
+                    </p>
+                </div>
+
+                <form class="quote-form" action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="full-name">Full Name / Company Name *</label>
+                        <input type="text"
+                               id="full-name"
+                               name="full_name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location / Area *</label>
+                        <input type="text"
+                               id="location"
+                               name="location"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Please select a service</option>
+                            <option value="plumbing-services">Plumbing Services</option>
+                            <option value="property-development">Property Development Plumbing</option>
+                            <option value="commercial-plumbing">Commercial Plumbing</option>
+                            <option value="repairs-maintenance">Repairs &amp; Maintenance</option>
+                            <option value="remedial-work">Remedial Work</option>
+                            <option value="solar-geyser">Solar Geyser Installation</option>
+                            <option value="general-building">General Building</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property-type">Type of Property *</label>
+                        <select id="property-type" name="property_type" required>
+                            <option value="">Please select property type</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="development">Property Development</option>
+                            <option value="public-sector">Public Sector</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date</label>
+                        <input type="date"
+                               id="preferred-date"
+                               name="preferred_date">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="description">Description of Work *</label>
+                        <textarea id="description"
+                                  name="description"
+                                  rows="6"
+                                  required
+                                  placeholder="Please describe the plumbing or construction work required."></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="documents">Upload Photos / Documents</label>
+                        <input type="file"
+                               id="documents"
+                               name="documents"
+                               accept="image/*,.pdf,.doc,.docx">
+                        <small>
+                            Upload photographs or supporting documents where applicable.
+                        </small>
+                    </div>
+
+                    <div class="form-submit full-width">
+                        <button type="submit" class="btn">
+                            SUBMIT QUOTE REQUEST
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
