@@ -1,14 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Shudus Plumbing and Construction provides professional plumbing installation, repairs, maintenance and construction solutions.">
-    <meta name="keywords"
-          content="Shudus Plumbing, plumbing, construction, plumbing repairs, geyser installation, Gauteng">
+    <meta name="description" content="Explore plumbing installation, commercial plumbing, property-development plumbing, repairs, maintenance, remedial work and solar geyser services.">
+    <meta name="keywords" content="plumbing services Gauteng, commercial plumbing, plumbing repairs, solar geyser installation, maintenance">
     <meta name="author" content="Khuthadzo Andrew Magada">
 
-    <title>Shudus Plumbing & Construction | Professional Plumbing Solutions</title>
+    <meta property="og:title" content="Plumbing & Construction Services | Shudus Plumbing">
+    <meta property="og:description" content="Explore plumbing installation, commercial plumbing, property-development plumbing, repairs, maintenance, remedial work and solar geyser services.">
+    <meta property="og:type" content="website">
+    <title>Plumbing & Construction Services | Shudus Plumbing</title>
 
     <!-- External CSS stylesheet required for Part 2 -->
     <link rel="stylesheet" href="style.css">
@@ -28,8 +31,8 @@
         <nav class="navbar" aria-label="Main navigation">
 
             <a href="index.html" class="logo" aria-label="Shudus Plumbing and Construction home">
-                <img src="images/shudus10.png"
-                     alt="Shudus Plumbing and Construction logo">
+                <img src="images/shudus-plumbing-construction-logo.png"
+                     alt="Shudus Plumbing and Construction logo" loading="lazy">
             </a>
 
             <button class="menu-toggle"
@@ -41,14 +44,14 @@
             </button>
 
             <ul class="nav-links" id="main-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
                 <li>
-                    <a href="#quote" class="quote-btn">Request a Quote</a>
+                    <a href="Requestaquote.html" class="quote-btn">Request a Quote</a>
                 </li>
             </ul>
         </nav>
@@ -64,14 +67,20 @@
 
                 <div class="section-heading">
                     <p class="section-label">WHAT WE DO</p>
-                    <h2>Our Services</h2>
+                    <h1>Our Services</h1>
                     <p>
                         Professional plumbing and construction solutions for
                         residential, commercial and property development projects.
                     </p>
                 </div>
 
-                <div class="services-grid">
+                <div class="service-tools">
+                    <label for="service-search">Find a service</label>
+                    <input type="search" id="service-search" placeholder="Search plumbing, repairs, geysers..." aria-describedby="service-count">
+                    <p id="service-count" class="form-feedback" aria-live="polite">Showing all services.</p>
+                </div>
+
+                <div class="services-grid" id="services-list">
 
                     <article class="service-card">
                         <div class="service-icon" aria-hidden="true">🔧</div>
@@ -80,7 +89,7 @@
                             Professional plumbing installation, repair and
                             maintenance solutions.
                         </p>
-                        <a href="services.html" class="card-link">Learn More</a>
+                        <a href="Services.html" class="card-link">Learn More</a>
                     </article>
 
                     <article class="service-card">
@@ -90,7 +99,7 @@
                             Plumbing solutions for property developers and
                             residential developments.
                         </p>
-                        <a href="services.html" class="card-link">Learn More</a>
+                        <a href="Services.html" class="card-link">Learn More</a>
                     </article>
 
                     <article class="service-card">
@@ -100,7 +109,7 @@
                             Plumbing services for businesses and commercial
                             projects.
                         </p>
-                        <a href="services.html" class="card-link">Learn More</a>
+                        <a href="Services.html" class="card-link">Learn More</a>
                     </article>
 
                     <article class="service-card">
@@ -110,7 +119,7 @@
                             Professional solutions for plumbing faults, repairs
                             and ongoing maintenance.
                         </p>
-                        <a href="services.html" class="card-link">Learn More</a>
+                        <a href="Services.html" class="card-link">Learn More</a>
                     </article>
 
                     <article class="service-card">
@@ -120,7 +129,7 @@
                             Plumbing remedial and corrective work to address
                             existing defects and problems.
                         </p>
-                        <a href="services.html" class="card-link">Learn More</a>
+                        <a href="Services.html" class="card-link">Learn More</a>
                     </article>
 
                     <article class="service-card">
@@ -130,12 +139,18 @@
                             Professional solar geyser installation systems
                             designed to provide reliable hot-water solutions.
                         </p>
-                        <a href="services.html" class="card-link">Learn More</a>
+                        <a href="Services.html" class="card-link">Learn More</a>
                     </article>
 
                 </div>
             </div>
-        </section>
+        <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <details><summary>How do I request a quotation?</summary><p>Use the Request a Quote page and provide your contact details, location and a description of the work required.</p></details>
+                    <details><summary>Do you assist residential and commercial clients?</summary><p>The website lists residential, commercial and property-development services. Contact the team to discuss your specific requirements.</p></details>
+                    <details><summary>Can I send photographs of the work?</summary><p>Use the document upload field on the quotation form to provide supporting photographs or documents.</p></details>
+                </div>
+                </section>
 
 
         <!-- =========================
@@ -186,3 +201,24 @@
         </section>
 
 
+</main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><h3>Shudus Plumbing &amp; Construction</h3><p>Professional plumbing and construction solutions in Gauteng.</p></div>
+        <div><h3>Quick Links</h3><ul>
+          <li><a href="index.html">Home</a></li><li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="Services.html">Services</a></li><li><a href="Projects.html">Projects</a></li>
+          <li><a href="Testimonials.html">Testimonials</a></li><li><a href="ContactUs.html">Contact</a></li>
+          <li><a href="Requestaquote.html">Request a Quote</a></li>
+        </ul></div>
+        <div><h3>Contact</h3><p><a href="tel:+27712759959">071 275 9959</a></p>
+          <p><a href="mailto:info@shudusplumbing.co.za">info@shudusplumbing.co.za</a></p>
+          <p>Cosmo City, Gauteng, South Africa</p></div>
+      </div>
+      <div class="copyright"><p>&copy; <span id="current-year">2026</span> Shudus Plumbing and Construction (Pty) Ltd. All rights reserved.</p></div>
+    </footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

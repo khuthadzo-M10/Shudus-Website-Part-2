@@ -1,14 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Shudus Plumbing and Construction provides professional plumbing installation, repairs, maintenance and construction solutions.">
-    <meta name="keywords"
-          content="Shudus Plumbing, plumbing, construction, plumbing repairs, geyser installation, Gauteng">
+    <meta name="description" content="Contact Shudus Plumbing and Construction in Cosmo City, Gauteng, for plumbing and construction enquiries.">
+    <meta name="keywords" content="contact Shudus Plumbing, plumbing enquiry Gauteng, Cosmo City plumbing company">
     <meta name="author" content="Khuthadzo Andrew Magada">
 
-    <title>Shudus Plumbing & Construction | Professional Plumbing Solutions</title>
+    <meta property="og:title" content="Contact Shudus Plumbing & Construction | Get in Touch">
+    <meta property="og:description" content="Contact Shudus Plumbing and Construction in Cosmo City, Gauteng, for plumbing and construction enquiries.">
+    <meta property="og:type" content="website">
+    <title>Contact Shudus Plumbing & Construction | Get in Touch</title>
 
     <!-- External CSS stylesheet required for Part 2 -->
     <link rel="stylesheet" href="style.css">
@@ -28,8 +31,8 @@
         <nav class="navbar" aria-label="Main navigation">
 
             <a href="index.html" class="logo" aria-label="Shudus Plumbing and Construction home">
-                <img src="images/shudus10.png"
-                     alt="Shudus Plumbing and Construction logo">
+                <img src="images/shudus-plumbing-construction-logo.png"
+                     alt="Shudus Plumbing and Construction logo" loading="lazy">
             </a>
 
             <button class="menu-toggle"
@@ -41,14 +44,14 @@
             </button>
 
             <ul class="nav-links" id="main-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
                 <li>
-                    <a href="#quote" class="quote-btn">Request a Quote</a>
+                    <a href="Requestaquote.html" class="quote-btn">Request a Quote</a>
                 </li>
             </ul>
         </nav>
@@ -68,7 +71,7 @@
 
                 <div class="section-heading">
                     <p class="section-label">CONTACT US</p>
-                    <h2>Need Reliable Plumbing or Construction Services?</h2>
+                    <h1>Need Reliable Plumbing or Construction Services?</h1>
                     <p>
                         Contact Shudus Plumbing and Construction for professional,
                         quality and affordable solutions.
@@ -134,20 +137,67 @@
             </div>
         </section>
 
-    </main>
+    
 
 
     <!-- =========================
          FOOTER
     ========================== -->
-    <footer class="footer">
+    <section class="section contact-form-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">SEND A MESSAGE</p>
+                    <h2>Contact Form</h2>
+                    <p>Send a general message to the Shudus Plumbing &amp; Construction team.</p>
+                </div>
+                <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="form-group">
+                        <label for="contact-name">Full name *</label>
+                        <input id="contact-name" name="name" type="text" minlength="2" maxlength="80" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email address *</label>
+                        <input id="contact-email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Phone number *</label>
+                        <input id="contact-phone" name="phone" type="tel" inputmode="tel" pattern="[0-9+() -]{7,20}" title="Enter a valid phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-type">Type of message *</label>
+                        <select id="message-type" name="message_type" required>
+                            <option value="">Choose a message type</option>
+                            <option>General enquiry</option><option>Service information</option><option>Existing project</option><option>Feedback</option><option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="contact-message">Your message *</label>
+                        <textarea id="contact-message" name="message" rows="6" minlength="10" maxlength="1500" required></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button class="btn" type="submit">Prepare Email</button>
+                        <p class="form-feedback" id="contact-feedback" role="status" aria-live="polite">Your email application will open with your message prepared for info@shudusplumbing.co.za.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="section map-section">
+            <div class="container">
+                <div class="section-heading"><p class="section-label">FIND US</p><h2>Our Location</h2><p>Cosmo City, Gauteng, South Africa</p></div>
+                <div id="business-map" class="business-map" role="application" aria-label="Interactive map showing the Cosmo City area"></div>
+                <p class="map-note">Map marker indicates the general Cosmo City area. Please confirm the exact business address directly before visiting.</p>
+            </div>
+        </section>
+        </main>
+<footer class="footer">
 
         <div class="footer-container">
 
             <div class="footer-brand">
-                <a href="#home" class="footer-logo">
-                    <img src="images/transparent logo.png"
-                         alt="Shudus Plumbing and Construction logo">
+                <a href="index.html#home" class="footer-logo">
+                    <img src="images/shudus-plumbing-construction-footer-logo.png"
+                         alt="Shudus Plumbing and Construction logo" loading="lazy">
                 </a>
 
                 <p>
@@ -159,25 +209,25 @@
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#quote">Request a Quote</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="Requestaquote.html">Request a Quote</a></li>
                 </ul>
             </div>
 
             <div class="footer-services">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="#services">Plumbing Services</a></li>
-                    <li><a href="#services">Property Development Plumbing</a></li>
-                    <li><a href="#services">Commercial Plumbing</a></li>
-                    <li><a href="#services">Repairs &amp; Maintenance</a></li>
-                    <li><a href="#services">Remedial Work</a></li>
-                    <li><a href="#services">Solar Geyser Installation</a></li>
+                    <li><a href="Services.html">Plumbing Services</a></li>
+                    <li><a href="Services.html">Property Development Plumbing</a></li>
+                    <li><a href="Services.html">Commercial Plumbing</a></li>
+                    <li><a href="Services.html">Repairs &amp; Maintenance</a></li>
+                    <li><a href="Services.html">Remedial Work</a></li>
+                    <li><a href="Services.html">Solar Geyser Installation</a></li>
                 </ul>
             </div>
 
@@ -238,5 +288,6 @@
             new Date().getFullYear();
     </script>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
