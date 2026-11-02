@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Replace YOUR-DOMAIN-HERE with the final deployed domain before publishing.
-Sitemap: https://YOUR-DOMAIN-HERE/sitemap.xml
+
+Sitemap: https://shudusplumbing.netlify.app/

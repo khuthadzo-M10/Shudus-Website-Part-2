@@ -128,7 +128,7 @@ Record actual browser/device test results after carrying out these checks. Do no
 
 ## 9. Deployment
 
-The website is a static HTML/CSS/JavaScript project and can be deployed to Netlify or GitHub Pages. Publish the folder containing the seven HTML pages, `style.css`, `script.js`, `images/`, `robots.txt` and `sitemap.xml`. After deployment, verify every page and form behaviour on the live URL. Configure a real form-processing service if direct online form submissions are required.
+The website was deployed (https://shudusplumbing.netlify.app/)
 
 ## 10. Version control
 
