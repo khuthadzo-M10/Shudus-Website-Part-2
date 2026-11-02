@@ -71,7 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const response = await fetch("/", { method: "POST", body: data });
         if (!response.ok) throw new Error("Form endpoint is unavailable");
-        if (feedback) feedback.textContent = "Thank you. Your quotation request has been submitted. The business will respond using the contact details supplied.";
+        if (feedback) {
+          const requestedService = quoteForm.querySelector("#service").selectedOptions[0].text;
+          const requestedArea = data.get("location");
+          feedback.textContent = `Thank you. Your request for ${requestedService} in ${requestedArea} has been submitted. The business will review the scope and contact you to discuss pricing. No price is calculated by this form.`;
+        }
         quoteForm.reset();
       } catch (error) {
         const fields = [
@@ -101,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const response = await fetch("/", { method: "POST", body: data });
         if (!response.ok) throw new Error("Form endpoint is unavailable");
-        if (feedback) feedback.textContent = "Thank you. Your message has been submitted successfully.";
+        if (feedback) feedback.textContent = `Thank you, ${data.get("name")}. Your message has been submitted successfully.`;
         contactForm.reset();
       } catch (error) {
         const body = [

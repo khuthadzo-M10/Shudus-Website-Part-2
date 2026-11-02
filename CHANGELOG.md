@@ -24,6 +24,7 @@ All notable changes to the Shudus Plumbing & Construction website are recorded h
 - Added a general contact form to `ContactUs.html` for name, email, phone, message category and message.
 - Improved the quotation form on `Requestaquote.html` with clearer input constraints, email and phone format checks, required controls, and a response region.
 - Added JavaScript submit handlers that call the browser's constraint validation and use `fetch()` to submit to Netlify Forms asynchronously; a `mailto:` fallback is provided for hosts without the Netlify form endpoint.
+- Added a post-submission response that repeats the requested service and location and explains that the business must review scope before confirming a price; no unsupported price estimate is invented.
 - Added Netlify Forms-compatible form names and hidden `form-name` controls. Configure Netlify email notifications after deployment; the static project itself does not contain a custom mail server or database.
 - Added guidance for attaching a selected supporting file manually to the prepared email.
 
