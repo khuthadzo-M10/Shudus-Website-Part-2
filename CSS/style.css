@@ -51,3 +51,56 @@ h1,h2,h3,h4{font-family:"Poppins",Arial,sans-serif;line-height:1.2;color:var(--d
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
 
 @media print{.header{position:static}.menu-toggle,.hero-buttons,.contact-actions{display:none}.hero{min-height:auto;background:none;color:#000}.hero h1,.hero p{color:#000}.section{padding:2rem 0}.footer{background:#fff;color:#000}}
+
+
+/* Part 3: interactive components, forms, gallery and map */
+[hidden] { display: none !important; }
+.service-tools { max-width: 620px; margin: 0 auto 28px; }
+.service-tools label { display:block; font-weight:700; margin-bottom:8px; }
+.service-tools input, .contact-form input, .contact-form select, .contact-form textarea {
+  width:100%; padding:13px 14px; border:1px solid #cbd5e1; border-radius:7px;
+  font:inherit; background:#fff; color:#1f2937;
+}
+.service-tools input:focus, .contact-form input:focus, .contact-form select:focus,
+.contact-form textarea:focus, .quote-form input:focus, .quote-form select:focus,
+.quote-form textarea:focus { outline:3px solid rgba(30, 100, 180, .2); border-color:#1d5f9e; }
+.form-feedback { color:#34465a; font-size:.94rem; margin-top:12px; }
+.contact-form { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; max-width:850px; margin:0 auto; }
+.contact-form .full-width { grid-column:1/-1; }
+.contact-form .btn { border:0; cursor:pointer; }
+.faq-section { max-width:900px; margin:48px auto 0; }
+.faq-section h3 { margin-bottom:18px; }
+.faq-section details { background:#f5f7fa; border:1px solid #dce3eb; border-radius:8px; padding:16px 18px; margin:10px 0; }
+.faq-section summary { cursor:pointer; font-weight:700; color:#12385c; }
+.faq-section details p { margin:12px 0 0; }
+.gallery-trigger { display:block; border:0; padding:0; width:100%; cursor:zoom-in; background:transparent; overflow:hidden; border-radius:inherit; }
+.gallery-trigger img { display:block; width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
+.gallery-trigger:hover img { transform:scale(1.045); }
+.lightbox { width:min(92vw,1000px); max-width:92vw; max-height:90vh; border:0; border-radius:12px; padding:18px; background:#fff; box-shadow:0 18px 60px rgba(0,0,0,.4); }
+.lightbox::backdrop { background:rgba(8,20,35,.82); }
+.lightbox img { display:block; max-width:100%; max-height:72vh; margin:auto; object-fit:contain; }
+.lightbox p { text-align:center; margin:12px 0 0; }
+.lightbox-close { display:block; margin:0 0 10px auto; border:0; border-radius:50%; width:38px; height:38px; font-size:26px; cursor:pointer; background:#eaf0f6; color:#12385c; }
+.business-map { width:100%; height:390px; border-radius:12px; overflow:hidden; background:#e8eef4; border:1px solid #d6dee8; }
+.map-note { font-size:.88rem; color:#586779; margin-top:10px; }
+@media (max-width:700px) {
+  .contact-form { grid-template-columns:1fr; }
+  .contact-form .full-width { grid-column:auto; }
+  .business-map { height:310px; }
+  .lightbox { padding:10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery-trigger img { transition:none; }
+  html { scroll-behavior:auto; }
+}
+
+/* Part 3 semantic heading and footer refinements */
+.section-heading h1 { font-family: 'Poppins', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; color: inherit; margin: 0 0 14px; }
+.site-footer { background:#102f4d; color:#fff; padding:42px 0 18px; margin-top:40px; }
+.site-footer a { color:#fff; text-decoration:underline; text-underline-offset:3px; }
+.site-footer a:hover, .site-footer a:focus { color:#b9d9f5; }
+.site-footer .footer-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; }
+.site-footer ul { list-style:none; padding:0; margin:0; }
+.site-footer li { margin:7px 0; }
+.site-footer .copyright { text-align:center; border-top:1px solid rgba(255,255,255,.25); margin-top:28px; padding-top:14px; }
+@media(max-width:700px) { .site-footer .footer-grid { grid-template-columns:1fr; } }
